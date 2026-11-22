@@ -49,14 +49,13 @@ nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
 
 // A static website cannot deliver email by itself. This opens the visitor's
 // email app with the completed message; set the destination below first.
-const CONTACT_EMAIL = 'YOUR-EMAIL@example.com';
+const CONTACT_EMAIL = 'leannsaligan@pcb.edu.ph
 document.getElementById('contact-form').addEventListener('submit', event => {
   event.preventDefault();
   const form = event.currentTarget;
   if (!form.reportValidity()) return;
-  if (CONTACT_EMAIL === 'YOUR-EMAIL@example.com') {
+  if (CONTACT_EMAIL === 'leannsaligan@pcb.edu.ph') {
     document.getElementById('form-status').textContent =
-      'Please set CONTACT_EMAIL in script.js to your email address before using Send.';
     return;
   }
   const data = new FormData(form);
