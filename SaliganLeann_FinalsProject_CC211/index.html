@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Leann Saligan — BSCS student, student leader, advocate, and innovator.">
+  <title>Leann Saligan | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="skills.css">
+</head>
+<body>
+  <main class="page" id="home">
+    <header class="topbar">
+      <a class="logo" href="#home" aria-label="Back to home">LS</a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="navigation" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">My Skills</a>
+        <a href="#contact">Contact Me</a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="portrait-frame">
+        <img src="assets/profile.jpg" alt="Portrait of Leann Saligan">
+      </div>
+      <div class="intro-copy">
+        <p class="hello">Hello, I’m</p>
+        <h1 id="hero-title">Leann<br>Saligan,</h1>
+        <p class="subtitle">BSCS Student · Student Leader</p>
+        <p class="intro-text">A student with a passion for building meaningful digital experiences, turning ideas into functional and creative solutions.</p>
+        <a class="learn-button" href="#about">Learn More</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-copy">
+        <p class="section-kicker">About Me</p>
+        <h2>Student<br>Leader, Advocate,<br>and Innovator</h2>
+      </div>
+      <div class="carousel" aria-label="Photo carousel">
+        <div class="carousel-window">
+          <div class="carousel-track">
+            <figure class="carousel-slide side-left">
+              <img src="assets/carousel-youth.jpg" alt="Youth leadership activity">
+            </figure>
+            <figure class="carousel-slide selected">
+              <img src="assets/carousel-community.jpg" alt="Community outreach activity">
+            </figure>
+            <figure class="carousel-slide side-right">
+              <img src="assets/carousel-speaking.jpg" alt="Student advocacy activity">
+            </figure>
+          </div>
+        </div>
+        <div class="carousel-dots" aria-label="Choose a carousel image">
+          <button type="button" class="dot" aria-label="Show youth leadership photo" aria-pressed="false"></button>
+          <button type="button" class="dot active" aria-label="Show community outreach photo" aria-pressed="true"></button>
+          <button type="button" class="dot" aria-label="Show student advocacy photo" aria-pressed="false"></button>
+        </div>
+        <p class="carousel-caption" aria-live="polite">Community outreach</p>
+      </div>
+    </section>
+
+    <section class="skills-row" id="skills" aria-label="Skills and experience">
+      <article class="skill-item skill-academic">
+        <img class="skill-icon" src="assets/skill-academic.png" alt="Graduation cap over an open book">
+        <p>Skilled in formal academic writing, critical analysis, and synthesizing credible research into clear, structured arguments.</p>
+      </article>
+      <article class="skill-item skill-office">
+        <img class="skill-icon" src="assets/skill-office.png" alt="Microsoft Word document icon">
+        <p>Skilled in using Microsoft Office, Former Microsoft Youth Ambassador 2.0.</p>
+      </article>
+      <article class="skill-item skill-leadership">
+        <img class="skill-icon" src="assets/skill-leadership.png" alt="Person climbing steps with a checklist">
+        <p>Results-driven professional with strong leadership and team management skills. Proven ability to guide projects, resolve conflicts, and inspire cross-functional teams to deliver high-quality results.</p>
+      </article>
+      <div class="leadership-photo">
+        <img src="assets/leadership.jpg" alt="Leann wearing a student council president shirt">
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>E-mail Me</h2>
+      <form id="contact-form">
+        <div class="fields">
+          <label class="visually-hidden" for="name">Your name</label>
+          <input id="name" name="name" type="text" placeholder="YOUR NAME" required>
+          <label class="visually-hidden" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="EMAIL" required>
+        </div>
+        <label class="visually-hidden" for="message">Message</label>
+        <textarea id="message" name="message" placeholder="MESSAGE..." required></textarea>
+        <button class="send" type="submit">Send</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
