@@ -1,0 +1,59 @@
+/* Skills section - matches the screenshot layout */
+.skills-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.skills-row .skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skills-row .skill-icon {
+  height: 150px;
+  width: auto;
+  margin-bottom: 36px;
+  mix-blend-mode: multiply;
+}
+
+.skills-row .skill-item p {
+  margin: 0;
+  font-family: "Alegreya", Georgia, serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  color: #111;
+}
+
+/* column widths copied from the screenshot */
+.skill-academic   { width: 140px; }
+.skill-office     { width: 80px;  }
+.skill-leadership { width: 215px; }
+.skill-office .skill-icon { height: 175px; margin-bottom: 11px; max-width: none; }
+.skill-leadership .skill-icon { height: 138px; margin-bottom: 48px; }
+
+.skills-row .leadership-photo {
+  width: 190px;
+  height: 347px;
+  flex: none;
+  border: 1px solid #000;
+}
+.skills-row .leadership-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 760px) {
+  .skills-row { flex-wrap: wrap; gap: 32px 24px; }
+  .skill-academic, .skill-office, .skill-leadership { width: 45%; min-width: 140px; }
+  .skills-row .leadership-photo { width: 190px; }
+}
